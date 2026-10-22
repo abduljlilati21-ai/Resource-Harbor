@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <script>
+      // Ensure trailing slash on GitHub Pages directory so relative asset paths never 404
+      (function() {
+        var path = window.location.pathname;
+        if (path && path.length > 1 && path.slice(-1) !== '/' && !path.split('/').pop().includes('.')) {
+          window.location.replace(path + '/' + window.location.search + window.location.hash);
+        }
+      })();
+    </script>
+    <script type="importmap">
+      {
+        "imports": {
+          "react": "https://esm.sh/react@19.0.0",
+          "react/jsx-runtime": "https://esm.sh/react@19.0.0/jsx-runtime",
+          "react-dom": "https://esm.sh/react-dom@19.0.0",
+          "react-dom/client": "https://esm.sh/react-dom@19.0.0/client",
+          "lucide-react": "https://esm.sh/lucide-react@0.546.0?external=react",
+          "motion/react": "https://esm.sh/motion@12.23.24/react?external=react",
+          "three": "https://esm.sh/three@0.170.0"
+        }
+      }
+    </script>
+    <title>NovaPlay Unblocked</title>
+    <meta name="description" content="A clean, fast unblocked web games portal with embedded iframe games." />
+    <meta property="og:title" content="NovaPlay Unblocked" />
+    <meta property="og:description" content="A clean, fast unblocked web games portal with embedded iframe games." />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2322d3ee' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect width='20' height='14' x='2' y='5' rx='4' fill='%230a0a0c' stroke='%2322d3ee'/%3E%3Cline x1='6' x2='10' y1='12' y2='12' stroke='%2322d3ee'/%3E%3Cline x1='8' x2='8' y1='10' y2='14' stroke='%2322d3ee'/%3E%3Ccircle cx='15' cy='12' r='1' fill='%2322d3ee'/%3E%3Ccircle cx='18' cy='10' r='1' fill='%2322d3ee'/%3E%3C/svg%3E" />
+    <link rel="alternate icon" href="./favicon.ico" />
+    <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
+  </head>
+  <body>
+    <div id="root">
+      <noscript>
+        <div style="padding: 2rem; color: #fff; font-family: sans-serif; text-align: center; background: #0a0a0a;">
+          <h2>JavaScript is required</h2>
+          <p>Please enable JavaScript in your browser to play NovaPlay Unblocked games.</p>
+        </div>
+      </noscript>
+    </div>
+
+    <!-- Smart script loader: loads pre-bundled assets on GitHub Pages static hosting, or src/main.js in Vite dev server -->
+    <script>
+      (function() {
+        var isDev = window.location.port === '3000' || !!window.__vite_plugin_react_preamble_installed__;
+        if (isDev) {
+          var devScript = document.createElement('script');
+          devScript.type = 'module';
+          devScript.src = './src/main.js';
+          document.body.appendChild(devScript);
+        } else {
+          var css = document.createElement('link');
+          css.rel = 'stylesheet';
+          css.href = './assets/app.css';
+          document.head.appendChild(css);
+
+          var prodScript = document.createElement('script');
+          prodScript.type = 'module';
+          prodScript.crossOrigin = 'anonymous';
+          prodScript.src = './assets/app.js';
+          document.body.appendChild(prodScript);
+        }
+      })();
+    </script>
+  </body>
+</html>

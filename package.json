@@ -1,0 +1,31 @@
+{
+  "name": "react-example",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --port=3000 --host=0.0.0.0",
+    "build": "vite build && cp dist/index.html dist/404.html && (cp dist/assets/*.js dist/assets/app.js 2>/dev/null || true) && (cp dist/assets/*.js dist/assets/main.js 2>/dev/null || true) && (cp dist/assets/index.css dist/assets/app.css 2>/dev/null || true) && (rm -rf assets && cp -r dist/assets . 2>/dev/null || true)",
+    "preview": "vite preview",
+    "clean": "rm -rf dist",
+    "lint": "echo 'No lint script configured'"
+  },
+  "dependencies": {
+    "@google/genai": "^1.29.0",
+    "@tailwindcss/vite": "^4.1.14",
+    "@vitejs/plugin-react": "^5.0.4",
+    "dotenv": "^17.2.3",
+    "express": "^4.21.2",
+    "lucide-react": "^0.546.0",
+    "motion": "^12.23.24",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "three": "^0.186.1",
+    "vite": "^6.2.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "tailwindcss": "^4.1.14",
+    "vite": "^6.2.0"
+  }
+}
